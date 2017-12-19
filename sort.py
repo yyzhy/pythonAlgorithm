@@ -4,12 +4,10 @@ y = 0
 def quickSort(num, l, r):
     global x
     x += 1
-    print(str(x) + ": hello quicksort().")
     if l >= r:
         return
     flag = l
     for i in range(l+1, r+1):
-        print("x...")
         if num[flag] > num[i]:
             tmp = num[i]
             del num[i]
@@ -21,7 +19,6 @@ def quickSort(num, l, r):
 def quickSortr(num, begin, end):
     global y
     y += 1
-    print(str(y) + ": hello quicksortr().")
     if begin >= end:
         return
     k = random.randint(begin, end)
@@ -30,7 +27,6 @@ def quickSortr(num, begin, end):
     num[k] = tmp1
     flag = begin
     for i in range(begin+1, end+1):
-        print("y...")
         if num[flag] > num[i]:
             tmp2 = num[i]
             del num[i]
