@@ -5,12 +5,12 @@ a = 999
 numarray = np.random.randint(10000, size = a)
 num = numarray.tolist()
 start1 = time.clock()
-sort.quicksort(num, 0, a-1)
+sort.quickSort(num, 0, a-1)
 end1 = time.clock()
 
 
 start2 = time.clock()
-sort.quicksortr(num, 0, a-1)
+sort.quickSortr(num, 0, a-1)
 end2 = time.clock()
 
 print("\n01 quicksort use " + str(end1-start1) + "s.")

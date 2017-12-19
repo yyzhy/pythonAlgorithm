@@ -1,7 +1,7 @@
 import random
 x = 0
 y = 0
-def quicksort(num, l, r):
+def quickSort(num, l, r):
     global x
     x += 1
     print(str(x) + ": hello quicksort().")
@@ -15,10 +15,10 @@ def quicksort(num, l, r):
             del num[i]
             num.insert(flag, tmp)
             flag = flag + 1
-    quicksort(num, l, flag - 1)
-    quicksort(num, flag + 1, r)
+    quickSort(num, l, flag - 1)
+    quickSort(num, flag + 1, r)
 
-def quicksortr(num, begin, end):
+def quickSortr(num, begin, end):
     global y
     y += 1
     print(str(y) + ": hello quicksortr().")
@@ -36,10 +36,10 @@ def quicksortr(num, begin, end):
             del num[i]
             num.insert(flag, tmp2)
             flag = flag + 1
-    quicksortr(num, begin, flag - 1)
-    quicksortr(num, flag + 1, end)
+    quickSortr(num, begin, flag - 1)
+    quickSortr(num, flag + 1, end)
 
 def printnum():
     global x, y
-    print("01 quicksort has done " + str(x) + " times.")
-    print("02 quicksortr has done " + str(y) + " times.")
+    print("01 quickSort has done " + str(x) + " times.")
+    print("02 quickSortr has done " + str(y) + " times.")
